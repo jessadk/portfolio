@@ -76,6 +76,34 @@ a {
    scroll-margin-top: 110px;
 }
 
+/* THANK YOU PAGE */
+
+body.thank-you {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   min-height: 100vh;
+ }
+
+ main.thank-you{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border-radius: 5px;
+   text-align: center;
+   padding: 100px;
+   background-color: var(--light-grey);
+ }
+
+.thank-you .header-socials{
+   margin-top: 50px;
+ }
+
+ footer.thank-you {
+   margin-top: auto;
+ }
+
 /* UTILITIES */
 
 .lead {
