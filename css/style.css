@@ -17,7 +17,7 @@
 } */
 
 body {
-    font: 400 1.125rem/150% var(--primary-font-stack); 
+    font: 400 1rem/150% var(--primary-font-stack); 
     color: var(--black);
     letter-spacing: .5px;
     overflow-x: hidden;
@@ -55,16 +55,13 @@ body {
    height: 4px; 
    background-color: var(--yellow); 
    position: absolute;
-   bottom: -30%; 
+   bottom: -40%; 
    left: 0; 
 }
 
  h3 {
-   font-size: 24px;
- }
-
- .lead {
-   font-size: 20px;
+   font-size: 22px;
+   margin-bottom: 5px;
  }
 
 a {
@@ -76,28 +73,37 @@ a {
 #skills,
 #projects,
 #contact {
-   scroll-margin-top: 120px;
+   scroll-margin-top: 110px;
 }
 
 /* UTILITIES */
 
+.lead {
+   font-size: 18px;
+ }
+
 a.btn-primary {
-   padding: 10px 20px;
+   padding: 7px 14px;
    border-radius: 5px;
    background-color: var(--black);
    color: var(--off-white);
 }
 
 a.btn-secondary {
-  padding: 10px 20px;
+  padding: 7px 14px;
   border-radius: 5px;
   background-color: var(--purple);
   color: var(--off-white);
 }
 
-a.underline {
+a.underline,
+p.email {
   cursor: pointer;
   border-bottom: 2px solid var(--yellow);
+}
+
+p.email {
+   padding-bottom: 2px;
 }
 
 .tooltip {
@@ -119,16 +125,16 @@ color: var(--off-white);
 text-align: center;
 }
 
+.tooltip.email:before {
+   transform: translateY(-100%);
+}
+
 .tooltip:hover:before {
   display: block;
 }
 
 .tooltip[data-text="Frontend Mentor"]:hover:before {
   width: 125px;
-}
-
-.tooltip[data-text="Open Email"]:hover:before {
-  transform: translateY(-105%);
 }
 
 .bold {
@@ -138,6 +144,12 @@ text-align: center;
 .bold-font {
    color: var(--purple);
    font-weight: 600;
+}
+
+.small-font {
+   font-size: 14px;
+   margin: 5px 0;
+   color: #a0a0a0;
 }
 
 /* HEADER SECTION */
@@ -157,7 +169,7 @@ header {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      padding: 25px;
+      padding: 15px;
       background-color: var(--off-white);
    }
 
@@ -348,7 +360,7 @@ section.about-facts {
    flex-direction: column;
    border-radius: 15px;
    background-color: var(--off-white);
-   width: 310px;
+   max-width: 310px;
    align-self: stretch;
    border-top-left-radius: 15px;
    border-top-right-radius: 15px;
@@ -394,8 +406,9 @@ section.about-facts {
 }
 
 .project-img {
-   height: 210px;
-   width: 310px;
+   width: 100%;
+   max-width: 350px;
+   height: auto;
 }
 
 .project-card h3 {
@@ -412,7 +425,8 @@ section.about-facts {
 .project-tech-list {
    display: flex;
    flex-wrap: wrap;
-   gap: 5px;
+   line-height: 135%;
+   gap: 0 5px;
    margin-bottom: 15px;
 }
 
@@ -449,8 +463,6 @@ section.about-facts {
    background-color: var(--off-white);
 }
 
-
-
 .contact-description p:nth-child(3) {
    margin-top: 20px;
 }
@@ -478,10 +490,8 @@ textarea:focus {
    margin: 25px 0 20px 0;
 }
 
-.contact-email a {
-   margin-top: 15px;
-   padding-bottom: 3px;
-   border-bottom: 2px solid var(--yellow);
+p.email {
+   display: inline;
 }
 
 .contact-email img {
@@ -542,6 +552,7 @@ footer {
 }
 
 /* MEDIA QUERIES */
+
 @media (max-width: 395px) {
    .nav-bar-wrapper {
       left: 0;
@@ -582,7 +593,6 @@ footer {
       width: 50%;
    }
 
-
    .about-facts-items {
       grid-template-columns: minmax(195px, 1fr) 2fr;
       gap: 10px;
@@ -603,6 +613,7 @@ footer {
 }
 
 @media (max-width: 768px) {
+
    .nav-bar-wrapper { 
       position: fixed;
       justify-content: flex-start;
@@ -656,19 +667,21 @@ footer {
 
    #mobile-nav-toggle {
       position: fixed;
-      z-index: 9999;
-      top: 15px; 
-      right: 15px;
+      z-index: 10000;
+      top: 0; 
+      right: 0;
+      left: 0;
+      display: flex;
+      justify-content: flex-end;
+      background-color: var(--off-white);
+      padding: 10px;
       cursor: pointer;
       border: none;
-      border-radius: 5px;
-      background-color: var(--off-white);
-      background-image: url('../assets/icons/menu.svg');
-      background-repeat: no-repeat;
-      background-size: 24px 24px;
-      background-position: center;
-      height: 36px;
-      width: 36px;
+   }
+
+   #mobile-nav-toggle img {
+      height: 24px;
+      width: 24px;
    }
 
  }
@@ -798,6 +811,10 @@ footer {
 
    .skills-wrapper {
       margin: 100px auto;
+   }
+
+   .projects-wrapper h2 {
+      margin-left: 0;
    }
 
    .contact-wrapper {

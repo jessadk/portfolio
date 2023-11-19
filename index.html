@@ -13,11 +13,19 @@
 </head>
 <body>
        <header>
-            <button id="mobile-nav-toggle"></button>
+
+            <button id="mobile-nav-toggle">
+                <img id="toggle-img" src="assets/icons/menu.svg" alt="menu icon">
+            </button>
+
             <section class="nav-bar-wrapper" data-visible="false">
                 <div class="nav-logo">
-                    <a href="#"><img src="assets/logo.png" alt="logo" class="nav-logo-img link"></a>
-                    <a href="#"><p class="nav-logo-title link">Jesse Adkins</p></a>
+                    <a href="#">
+                        <img src="assets/logo.png" alt="logo" class="nav-logo-img link">
+                    </a>
+                    <a href="#">
+                        <p class="nav-logo-title link">Jesse Adkins</p>
+                    </a>
                 </div>
         
                 <nav class="main-nav">
@@ -41,17 +49,25 @@
                     
                     <p class="lead">Based in Nevada, transforming imagination into reality - one website at a time.</p>
                     <div class="header-socials">
-                        <a href="https://linkedin.com/in/adkinsjesse" target="_blank" data-text="LinkedIn" class="tooltip"><img src="assets/icons/linkedin.svg" alt="linkedin icon"></a>
-                        <a href="https://codepen.io/jesseadkins" target="_blank" data-text="Codepen" class="tooltip"><img src="assets/icons/codepen.svg" alt="codepen icon"></a>
-                        <a href="https://github.com/jessadk" target="_blank" data-text="Github" class="tooltip"><img src="assets/icons/github-icon.svg" alt="github icon"></a>
-                        <a href="https://www.frontendmentor.io/profile/jessadk" target="_blank" data-text="Frontend Mentor" class="tooltip"><img src="assets/icons/frontend-mentor.svg" alt="frontend mentor icon"></a>
+                        <a href="https://linkedin.com/in/adkinsjesse" target="_blank" data-text="LinkedIn" class="tooltip">
+                            <img src="assets/icons/linkedin.svg" alt="linkedin icon">
+                        </a>
+                        <a href="https://codepen.io/jesseadkins" target="_blank" data-text="Codepen" class="tooltip">
+                            <img src="assets/icons/codepen.svg" alt="codepen icon">
+                        </a>
+                        <a href="https://github.com/jessadk" target="_blank" data-text="Github" class="tooltip">
+                            <img src="assets/icons/github-icon.svg" alt="github icon">
+                        </a>
+                        <a href="https://www.frontendmentor.io/profile/jessadk" target="_blank" data-text="Frontend Mentor" class="tooltip">
+                            <img src="assets/icons/frontend-mentor.svg" alt="frontend mentor icon">
+                        </a>
                     </div>
                     <ul class="header-cta">
                         <li><a href="#projects" class="btn-secondary">Explore Recent Projects</a></li>
                         <li><a class="underline" href="https://www.dropbox.com/scl/fi/g693ehcc8a9kiylz82kau/jesse-adkins-resume.pdf?rlkey=yezylb0bb4uw84x24q9g5t9fw&dl=0" target="_blank">View Resume</a></li>
                     </ul>
                 </section>
-                <img src="assets/header-headshot.png" alt="" class="header-headshot">
+                <img src="assets/header-headshot.png" alt="Headshot of Jesse Adkins" class="header-headshot">
             </section>
        </header>
        <main>
@@ -60,9 +76,9 @@
             <img src="assets/about-headshot.png" alt="silhouette of headshot" class="about-headshot">
             <div class="about-description">
                 <h2>About</h2>
-                <p>Hello World, I'm Jesse! After years as a full-time parent - or what I like to call, Household CEO - I am making the transition into web development. My journey is driven by a <span class="bol">love for puzzles</span> and fueled by <span class="bol">boundless curiosity</span> and <span class="bol">passionate googling</span>.</p> 
+                <p>Hello World, I'm Jesse! After years as a full-time parent - or what I like to call, Household CEO - I am making the transition into web development. My journey is driven by a love for puzzles and fueled by boundless curiosity and passionate googling.</p> 
         
-                <p>I recently graduated with a <span class="bol">Bachelor of Science in Web Design and Development</span> that gave me a comprehensive understanding of web-related concepts, technologies, and skills necessary for designing, developing and maintaining websites and web apps. I value <span class="bol">goal oriented</span>, <span class="bol">user-centric</span> and <span class="bol">responsive development</span> that is maintainable and adaptive to the ever-evolving digital landscape.</p>
+                <p>I recently graduated with a Bachelor of Science in Web Design and Development that gave me a comprehensive understanding of web-related concepts, technologies, and skills necessary for designing, developing and maintaining websites and web apps. I value goal oriented, user-centric and responsive development that is maintainable and adaptive to the ever-evolving digital landscape.</p>
         
                 <p>It's my goal to be given the opportunity as a junior frontend developer to contribute my knowledge and skills, while continuing to learn and evolve with the tech industry.</p>
         
@@ -97,6 +113,7 @@
                     <li>JavaScript</li>
                     <li>SASS/SCSS</li>
                     <li>Bootstrap</li>
+                    <li>Reponsive Design</li>
                     <li>Git</li>
                     <li>Github</li>
                     <li>VSCode</li>
@@ -114,6 +131,7 @@
                         <li>C++</li>
                         <li>Illustrator</li>
                         <li>InDesign</li>
+                        <li>Adobe XD</li>
                     </ul>
                 </div>
             </div>
@@ -124,82 +142,101 @@
         <h2 >Projects</h2>
         <div class="project-container">
             <div class="project-card">
-                <a href="">
+                <a href="#">
                     <img src="assets/project-card/portfolio-project.png" alt="Project Screenshot" class="project-img">
                 </a>
                 <div class="project-description">
                     <div>
-                        <h3>Personal Portfolio</h3> 
+                        <h3>Personal Portfolio</h3>
+                        <ul class="project-tech-list bold-font">
+                            <li>#html</li>
+                            <li>#css</li>
+                            <li>#javascript</li>
+                            <li>#responsive-design</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <p>A representation of myself and my skills. Designed with resposiveness and simplicity in mind - frill free (mostly). Built with CSS Flexbox, CSS Grid and Vanilla JavaScript - and redesigned in Figma about 1,000 times.</p>
+                        <p class="small-font">Design By: Me</p>
+                    </div>
+                    <div class="project-btn-group">
+                        <div class="code-btn">
+                            <a href="https://github.com/jessadk/portfolio">
+                                <img src="assets/icons/github-icon.svg" alt="Github Icon">
+                            </a>
+                            <a href="https://github.com/jessadk/portfolio" class="underline">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <a href="https://password-generator-rouge-rho.vercel.app">
+                    <img src="assets/password-gen-screenshot.png" alt="Project Screenshot" class="project-img">
+                </a>
+                <div class="project-description">
+                    <div>
+                        <h3>Password Generator</h3>
+                        <ul class="project-tech-list bold-font">
+                            <li>#html</li>
+                            <li>#css</li>
+                            <li>#javascript</li>
+                            <li>#responsive-design</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p>A simple password app that allows users to generate random passwords of varying lengths, copy them to the clipboard, and toggle between light and dark themes.</p>
+
+                        <p class="small-font">Design By: Scrimba</p>
+                    </div>
+                    <div class="project-btn-group">
+                        <div class="demo-btn">
+                            <a href="https://password-generator-rouge-rho.vercel.app">
+                                <img src="assets/icons/world.svg" alt="External Website Icon">
+                            </a>
+                            <a href="https://password-generator-rouge-rho.vercel.app" class="underline">Live Demo</a>
+                        </div>
+                        <div class="code-btn">
+                            <a href="https://github.com/jessadk/password-generator">
+                                <img src="assets/icons/github-icon.svg" alt="Github Icon">
+                            </a>
+                            <a href="https://github.com/jessadk/password-generator" class="underline">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <a href="https://scorekeeper-nine.vercel.app">
+                    <img src="assets/project-card/score-tracking-app.png" alt="Project Screenshot" class="project-img">
+                </a>
+                <div class="project-description">
+                    <div>
+                        <h3>Score Keeper App</h3>
                         <ul class="project-tech-list bold-font">
                             <li>#html</li>
                             <li>#css</li>
                             <li>#javascript</li>
                         </ul>
                     </div>
-                    <div class="project-btn-group">
-                        <div class="code-btn">
-                            <a href="">
-                                <img src="assets/icons/github-icon.svg" alt="Github Icon">
-                            </a>
-                            <a href="" class="underline">View Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <a href="https://github.com/jessadk/testimonial-grid-section">
-                    <img src="assets/project-card/placeholder.png" alt="Project Screenshot" class="project-img">
-                </a>
-                <div class="project-description">
                     <div>
-                        <h3>Testimonial Grid Section</h3>
-                        <ul class="project-tech-list bold-font">
-                            <li>#html</li>
-                            <li>#sass/scss</li>
-                        </ul>
+                        <p>A program designed for keeping track of scores. Points can be added for each team with the score being updated in real-time. Starting a new game automatically resets team scores back to 0.</p>
+
+                        <p class="small-font">Design By: Scrimba</p>
                     </div>
                     <div class="project-btn-group">
                         <div class="demo-btn">
-                            <a href="https://testimonial-grid-section-iota.vercel.app">
+                            <a href="https://scorekeeper-nine.vercel.app">
                                 <img src="assets/icons/world.svg" alt="External Website Icon">
                             </a>
-                            <a href="https://testimonial-grid-section-iota.vercel.app" class="underline">Live Demo</a>
+                            <a href="https://scorekeeper-nine.vercel.app" class="underline">Live Demo</a>
                         </div>
                         <div class="code-btn">
-                            <a href="#">
+                            <a href="https://github.com/jessadk/scorekeeper">
                                 <img src="assets/icons/github-icon.svg" alt="Github Icon">
                             </a>
-                            <a href="https://github.com/jessadk/testimonial-grid-section" class="underline">View Code</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project-card">
-                <a href="">
-                    <img src="assets/project-card/preview-card-component.png" alt="Project Screenshot" class="project-img">
-                </a>
-                <div class="project-description">
-                    <div>
-                        <h3>Preview Card Component</h3> 
-                        <ul class="project-tech-list bold-font">
-                            <li>#html</li>
-                            <li>#css</li>
-                        </ul>
-                    </div>
-                    <div class="project-btn-group">
-                        <div class="demo-btn">
-                            <a href="">
-                                <img src="assets/icons/world.svg" alt="External Website Icon">
-                            </a>
-                            <a href="" class="underline">Live Demo</a>
-                        </div>
-                        <div class="code-btn">
-                            <a href="">
-                                <img src="assets/icons/github-icon.svg" alt="Github Icon">
-                            </a>
-                            <a href="" class="underline">View Code</a>
+                            <a href="https://github.com/jessadk/scorekeeper" class="underline">View Code</a>
                         </div>
                     </div>
                 </div>
@@ -223,7 +260,7 @@
                 <p class="lead">Let's start a conversation!</p> 
                 <div class="contact-email">
                     <p class="bold-font">Email Me</p>
-                    <a href="mailto:jesse@jesseadkins.com" class="email tooltip" data-text="Open Email">jesse@jesseadkins.com</a>
+                    <p class="email tooltip" data-text="Copy">jesse@jesseadkins.com</p>
                 </div>
     
                 <div class="contact-socials">
@@ -247,7 +284,7 @@
                 <textarea name="message" id="message" rows="5" required></textarea>
                 
 
-                <div><input type="submit"></div>
+                <div><input type="submit" ></div>
             </form>
      </section> 
 
