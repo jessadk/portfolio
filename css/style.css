@@ -90,6 +90,8 @@ body.thank-you {
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   width: 80%;
+   margin: 0 auto;
    border-radius: 5px;
    text-align: center;
    padding: 100px;
